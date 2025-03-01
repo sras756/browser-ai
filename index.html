@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Store with DeepSeek AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Play Store with DeepSeek AI</h1>
+    <div class="header-controls">
+      <input type="text" id="search" placeholder="Search apps...">
+      <button id="publish-btn">Publish Your App</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-link active" data-tab="all-apps">All Apps</button>
+      <button class="tab-link" data-tab="recommendations">Recommendations</button>
+      <button class="tab-link" data-tab="search-results">Search Results</button>
+    </div>
+
+    <div id="all-apps" class="tab-content active">
+      <div id="app-list" class="app-list"></div>
+    </div>
+
+    <div id="recommendations" class="tab-content">
+      <div id="recommended-list" class="app-list"></div>
+    </div>
+
+    <div id="search-results" class="tab-content">
+      <div id="search-list" class="app-list"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
